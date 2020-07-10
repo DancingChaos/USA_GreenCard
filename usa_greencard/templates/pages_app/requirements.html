@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static i18n %}
+
+{% block content %}
+  <img class="bg-style" src="{% static 'images/3-banner.webp' %}">
+  <div class="container">
+    <h1 class="title-style">Requirements</h1>
+    <div class="row">
+      <div style="float: left" class="col-sm-2">
+        <div class="wpb_wrapper">
+          <div class="wpb_text_column wpb_content_element ">
+            <div class="wpb_wrapper">
+              <div align="center"><h1
+                      style="-webkit-box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.75); -moz-box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.75); box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.75); -webkit-border-radius: 66px; -moz-border-radius: 66px; border-radius: 66px; color: #fff; text-align: center; background: #0364db; max-width: 128px; padding: 43px 0px; margin: 0px;">
+                <strong>1</strong></h1></div>
+            </div>
+          </div>
+          <div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
+        </div>
+      </div>
+      <div style="float: left" class="col-sm-10">
+        <div style="border-bottom: black dashed 1px"><strong>Born from a qualifying country</strong></div>
+        <p>It is required that each applicant be native/born of one of the qualifying countries to fulfill the
+          eligibility
+          criteria of applying for an
+          immigration visa to the U.S. Here, a qualifying country is basically a country that is included in the list of
+          eligible countries for this
+          program per year. Also, keep in mind that if the applicant is not from one of the qualifying countries but
+          his/her spouse was born in
+          one of the qualifying countries then the applicant will be able to claim the country of his/her spouse under
+          the
+          condition that the
+          visas will be issued to both the applicants and they will have the option to live and reside in the United
+          States. Moreover, if the
+          applicant is not born in a qualifying country but his/her parents are, the applicant, in this case, may claim
+          the right to enter by the
+          nativity of the country of origin of his/her parents.
+        </p>
+        <p>
+          Here is the list for
+          <a href="{% url 'pages_app:eligible_countries' %}">eligible countries.</a>
+          <br>
+          Here is the list for
+          <a href="{% url 'pages_app:eligible_countries' %}">non–eligible countries</a>
+        </p>
+      </div>
+      <div class="col-sm-12 dashed-style"></div>
+       <div style="float: left" class="col-sm-2">
+        <div class="wpb_wrapper">
+          <div class="wpb_text_column wpb_content_element ">
+            <div class="wpb_wrapper">
+              <div align="center"><h1
+                      style="-webkit-box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.75); -moz-box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.75); box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.75); -webkit-border-radius: 66px; -moz-border-radius: 66px; border-radius: 66px; color: #fff; text-align: center; background: #0364db; max-width: 128px; padding: 43px 0px; margin: 0px;">
+                <strong>2</strong></h1></div>
+            </div>
+          </div>
+          <div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
+        </div>
+      </div>
+      <div style="float: left" class="col-sm-10">
+        <div style="border-bottom: black dashed 1px"><strong>Education and Training</strong></div>
+        <p>An applicant must meet either the education or training requirements; meaning, an applicant must have EITHER a completed high
+          school education OR an equivalent to a high school diploma which is accepted in the United States, OR two years of work
+          experience consecutively within the past five years. The U.S. Department of Labor’s O*Net OnLine database will be used to
+          determine the occupations that require at least two years of training or experience to perform.</p>
+      </div>
+      <div class="col-sm-10" align="center" style="margin: 100px 0 100px 0">
+        <img src="{% static 'images/bunner-2-req.jpg' %}">
+      </div>
+    </div>
+  </div>
+{% endblock %}

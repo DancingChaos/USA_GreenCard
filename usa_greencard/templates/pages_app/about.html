@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static i18n %}
+
+{% block content %}
+  <img class="bg-style" src="{% static 'images/6-banner.webp' %}">
+  <div class="container">
+    <h1 class="title-style">About Us</h1>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="{% static 'images/who-we-are.png' %}">
+      </div>
+      <div class="col-sm-8">
+        <h3 style="border-bottom: black dashed 1px;">Who We Are</h3>
+        <span>USAgreencard.online is a specialized immigration company that is dedicated to providing non-American
+            natives with the most up-to-date information regarding the U.S. immigration laws, regulations and</span>
+      </div>
+    </div>
+    <div class="col-sm-12 dashed-style"></div>
+    <div>
+      <div class="wpb_wrapper"><p><a class="btn btn-primary" href="https://usagreencard.online/profile/register/">Are
+        You
+        Eligibile for a Green Card ?&nbsp;</a></p>
+        <div style="height: 20px;"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <h3 style="border-bottom: dashed 1px black">Secure online registration</h3>
+        <p>We provide our clients with a secure online registration for the United States Green Card Program. Our
+          system and process structure are designed to ensure that non-American natives will be able to easily
+          submit their applications online within the applicable time frame. The system is designed to protect
+          applicants from omitting information or filling out the application inaccurately. Our team of professionals
+          will guide you throughout the entire process and personally check the application before its submission.</p>
+
+        <span>In order to register now please <a href="#">click here</a></span>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="{% static 'images/secure-online-registration.png' %}">
+      </div>
+    </div>
+    <div class="col-sm-12 dashed-style"></div>
+    <div style="margin-bottom: 50px" class="row">
+      <div class="col-sm-4">
+        <img src="{% static 'images/our-mission.png' %}">
+      </div>
+      <div class="col-sm-8">
+        <h3 style="border-bottom: black dashed 1px;">Who We Are</h3>
+        <p>Our mission is to provide reliable and effective immigration services to all non-American natives who
+          wish to legally live and work in the United States of America. We are dedicated to providing our team
+          members with a pleasant working environment, equal treatment and fair wage, and to our clients with
+          an enjoyable, efficient and stress free experience while protecting their privacy. The core values upon
+          which our company was founded on and guide our day-to-day operations are high quality customer
+          service, professionalism, efficiency, personable communication, trust and reliability.Ultimately, our long
+          term goals are to position our company at the top of the immigration services industry and to create
+          high customer-brand loyalty.</p>
+      </div>
+    </div>
+
+  </div>
+{% endblock %}

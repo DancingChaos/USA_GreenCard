@@ -73,6 +73,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "usa_greencard.users.apps.UsersConfig",
+    "usa_greencard.pages_app.apps.PagesAppConfig"
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

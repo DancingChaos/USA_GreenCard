@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static i18n %}
+
+{% block content %}
+   <img class="bg-style" src="{% static 'images/6-banner.webp' %}">
+<div class="container">
+  <h1 class="title-style">usagreencard.online advantages</h1>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="col-sm-6" style="float: left">
+        <img src="{% static 'images/banner_advantage.png' %}">
+      </div>
+      <div class="col-sm-6" style="float: left">
+        <h2>Why <a href="{% url 'home' %}">usagreencard.online?</a></h2>
+        <p>• We are dedicated to guide and assist you each step of the way by keeping you in the loop.</p>
+        <p>• We are committed to notifying all of the lottery winners ASAP via their preferred contact method
+          which could be email, phone, or postal mail.</p>
+        <p>• We allow our clients to update or change their physical address and any other contact information whenever
+          they want to save them from any unnecessary trouble even after the whole process of registration is
+          complete. We always make sure to update our database with the most recent and correct information.
+        </p>
+        <p><strong>• Multiple options for photo submission:</strong>
+          There are more than one options for our clients to send their photos by
+          <br>
+          1) Emailing us or uploading it online
+          <br>
+          2) Or Via direct mail
+          <br>
+          The received photos are scanned as per the requirements set by the U.S. government.
+        </p>
+        <p><strong>• We are Always on Time</strong>– Usagreencard.online is committed to providing you with the
+          efficient service and we never miss a deadline as we make sure that everything is in order to
+          avoid any delay in the processing of the applications.
+        </p>
+        <p>
+          • The government of the US holds very strict deadline regulations of the application
+          submission period of the Diversity Visa Program, there is the very limited and short
+          time period. Our experienced and dedicated team ensure that there are no delays and the
+          application is submitted before the required time frame to prevent any last-minute troubles.
+        </p>
+        <p>• We also allow you to resubmit the application next year so you don’t have to provide and
+          fill the information again as we automatically resubmit the application every year. Kindly note
+          that you can find this service under “Payment Options” and it involves additional payment.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

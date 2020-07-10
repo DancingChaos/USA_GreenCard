@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static i18n %}
+
+{% block content %}
+  <img class="bg-style" src="{% static 'images/5-banner.webp' %}">
+  <div class="container">
+    <h1 class="title-style">Contact Us</h1>
+    <div class="row">
+      <div class="col-sm-12" style="margin-bottom: 50px">
+        <div class="col-sm-8" style="float: left">
+          <p>
+            <label>
+              <strong>First Name(Required)</strong>
+              <br>
+              <span>
+                <input type="text" name="first-name"
+                       value="" size="80"
+                       class="input-style"
+                       aria-required="true" aria-invalid="false">
+              </span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <strong>Last Name(Required)</strong>
+              <br>
+              <span>
+                <input type="text" name="last-name"
+                       value="" size="80"
+                       class="input-style"
+                       aria-required="true" aria-invalid="false">
+              </span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <strong>Email Address(Required)</strong>
+              <br>
+              <span>
+                <input type="text" name="email-address"
+                       value="" size="80"
+                       class="input-style"
+                       aria-required="true" aria-invalid="false">
+              </span>
+            </label>
+          </p>
+          <p>
+            <label>
+              First Name(Required)
+              <br>
+              <span class="wpcf7-form-control-wrap first-name">
+                <textarea name="your-message"
+                          cols="88" rows="10"
+                          aria-invalid="false"
+                          class="input-style"
+                >
+                </textarea>
+              </span>
+            </label>
+          </p>
+          <p><input type="submit" value="Submit" class="submit-btn"></p>
+        </div>
+        <div class="col-sm-4" style="float:left">
+          <p>
+            <span><strong>Tel:</strong> +1 888 552 5080</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

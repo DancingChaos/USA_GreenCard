@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static i18n %}
+
+{% block content %}
+  <img class="bg-style" src="{% static 'images/3-banner.webp' %}">
+  <div class="container">
+    <h1 class="title-style">The DV Program</h1>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="{% static 'images/why_choose_us.png' %}">
+      </div>
+      <div class="col-sm-8">
+        <h5 style="border-bottom: black dashed 1px;">Why us?</h5>
+        <p>When you register with <a href="{% url 'home' %}">usagreencard.online</a>, we provide you with the two options:
+        </p>
+        <p>a) Complete the DV Green Card program’s online application OR</p>
+        <p>b) You can also request one of our immigration experts to assist you with your application and procedure</p>
+      </div>
+    </div>
+    <div class="col-sm-12 dashed-style"></div>
+    <div class="row">
+      <div class="col-sm-8">
+        <h5 style="border-bottom: dashed 1px black">Online Application for Green Card</h5>
+        <p>Making the immigration process simple and pleasant for you is one of the main goals we are committed
+          to achieving because we, at <a href="{% url 'home' %}">usagreencard.online</a>, value and respect your time. We provide our clients
+          with the most efficient and fast service as per their convenience to file and submit their application
+          for the United States Green Card Program. In order to provide you with the quality service, we offer the
+          online application services in more than twenty languages so there won’t be any communication barrier
+          to cause any unnecessary trouble with understanding the complicated and complex governmental terms.
+          After you complete your application process, one of our experts reviews your application to make sure
+          that there are not any mistakes and all the information is accurate and complete. Also, your answers are
+          checked to make sure they meet the strict standards and regulations of content and formatting of the United States.
+        </p>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="{% static 'images/online_green_card_application.png' %}">
+      </div>
+    </div>
+    <div class="col-sm-12 dashed-style"></div>
+    <div style="margin-bottom: 50px" class="row">
+      <div class="col-sm-4">
+        <img src="{% static 'images/personal_assistance_option.png' %}">
+      </div>
+      <div class="col-sm-8">
+        <h5 style="border-bottom: black dashed 1px;">Option for Personal Assistance</h5>
+        <p>
+          One of our experts will be happy to guide and assist you over the phone if you prefer to receive
+          personal assistance with your application process at any stage.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-12 dashed-style"></div>
+    <div class="row" style="margin-bottom: 50px">
+      <div class="col-sm-8">
+        <h5 style="border-bottom: dashed 1px black">Reminder</h5>
+        <p>The applicants are allowed to make changes and corrections to update their application form
+          by using our services of online application before the final submission of your application.
+          This feature is particularly useful if you have made any mistakes in the application form or
+          want to change your marital status, or welcome a new baby in the family, changing the last name,
+          new contact information or any other updates that might follow.
+        </p>
+        <p>
+          The strict requirements are outlined by the United States Government to submit the pictures
+          for the Diversity Visa program and our photo experts check each and every single one of the
+          photos to make sure it meets the specifics and verify the photo. It is highly recommended to
+          submit the photos ASAP in order to avoid any last minute troubles and missing out the application
+          deadline.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="{% static 'images/reminder.png' %}">
+      </div>
+    </div>
+
+  </div>
+{% endblock %}

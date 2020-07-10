@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static i18n %}
+
+{% block content %}
+  <img class="bg-style" src="{% static 'images/6-banner.webp' %}">
+  <div class="container">
+    <h1 class="title-style">Private Entity</h1>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="{% static 'images/we-are-a-private-entity-banner.png' %}">
+      </div>
+      <div class="col-sm-8">
+        <h5 style="border-bottom: black dashed 1px;">We, <a href="{% url 'home' %}">usagreencard.online</a>, Are A Private Entity</h5>
+        <p>We are a business company which is private and non-governmental who is committed to guide
+          and assist all the non-American natives for the registration of US Diversity Visa or Green
+          Card Program. The only interaction with the U.S. government takes place while we submit your
+          complete documents and forms to the State Department for processing in the final stage.</p>
+      </div>
+    </div>
+    <div class="col-sm-12 dashed-style"></div>
+    <div class="row" style="margin-bottom: 50px">
+      <div class="col-sm-8">
+        <h5 style="border-bottom: dashed 1px black">Why Our Clients Choose Us?</h5>
+        <p>We, as a team, are dedicated to our work and we guide our clients at every point to ensure that their
+          application is completed and submitted accurately on time without any delay. The submission period
+          for the DV Green card lottery is usually between thirty to sixty days in the months of September or
+          November but we offer our clients to complete and submit all the necessary information and fill out
+          the registration and application forms for Diversity Visa throughout the year.
+        </p>
+        <p>
+          We go over the documents and application forms of our clients to double check all the information
+          in order to verify that everything is accurate and in order. Also, we ensure the timely submission
+          of your applications. The official submission period of the Diversity Visa program is ninety days
+          but we allow our clients to complete all the required forms and submit documents throughout the year.
+        </p>
+
+        <p><a href="{% url 'pages_app:advantages' %}">read more</a></p>
+
+      </div>
+      <div class="col-sm-4">
+        <img src="{% static 'images/reason-our-clients-choose-us.png' %}">
+      </div>
+    </div>
+
+  </div>
+{% endblock %}
+

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static i18n %}
+
+{% block content %}
+  <img class="bg-style" src="{% static 'images/banner-8.jpg' %}">
+  <div style="background-image: url({% static 'images/flag-day.jpg' %});
+          background-repeat: no-repeat;
+          background-size: cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" style="margin: 50px;background-color: white;padding: 20px">
+          <div class="col-sm-8" style="float: left">
+            <h1>Registration Form</h1>
+            <h3>Enter the United states Diversity Visa Program, Submit your Green Card Application</h3>
+            <div style="margin-bottom: 20px">
+              <label style="width: 200px">Email *</label>
+              <input type="email" class="validate input-style" size="40">
+            </div>
+            <div style="margin-bottom: 20px">
+              <label style="width: 200px">Name *</label>
+              <input type="name" class="validate input-style" size="40">
+            </div>
+            <div style="margin-bottom: 20px">
+              <label style="width: 200px">Last Name *</label>
+              <input type="last-name" class="validate input-style" size="40">
+            </div>
+            <div style="margin-bottom: 20px">
+              <label style="width: 200px">Marital status *</label>
+              <select name="ggc_register[marital_status]" class="validate input-style" style="width: 200px" required="">
+                <option value="" selected="selected">Select</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+              </select>
+            </div>
+            <div style="margin-bottom: 20px">
+              <label style="width: 200px">Country of Birth *</label>
+              <select name="ggc_register[marital_status]" class="validate input-style" style="width: 200px" required="">
+                <option value="" selected="selected">Select</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+              </select>
+            </div>
+            <div style="margin-bottom: 20px">
+              <label style="width: 200px">Where Do You Live *</label>
+              <select name="ggc_register[marital_status]" class="validate input-style" style="width: 200px" required="">
+                <option value="" selected="selected">Select</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+              </select>
+            </div>
+            <div style="margin-bottom: 20px">
+              <label style="width: 200px">Phone (Home / Office) *</label>
+              <input class="validate input-style" size="5">
+              <input class="validate input-style" size="28">
+            </div>
+            <div style="margin-bottom: 20px">
+              <label style="width: 200px">Mobile Phone</label>
+              <input class="validate input-style" size="5">
+              <input class="validate input-style" size="28">
+            </div>
+            <div> <input style="background-color: #1865b4" class="submit-btn" type="submit" value="Register"></div>
+          </div>
+          <div class="col-sm-4" style="float: left">
+            <div class="boxed"><h3> What is the Diversity Visa Program?</h3><h5> Every year the United States gives away
+              55,000 US permanent resident visas, to winners of the Diversity Visa Program also known as Green Card
+              Program.</h5></div>
+            <div class="boxed"><h3> Our Services</h3><h5> Usagreencard.online is a private ( non-governmental) entity,
+              whose main goal is to assist all non-American with registering for the US Diversity Visa Green Card
+              program.</h5></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
